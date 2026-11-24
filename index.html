@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="University Student Activity Management Portal">
+
+    <meta name="author" content="University Student">
+
+    <title>Student Activity Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>University Activity Portal</h1>
+        <p>Discover. Participate. Grow.</p>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home">
+
+        <!-- Welcome Section -->
+        <section>
+            <h2>Welcome Students!</h2>
+            <p>
+                Explore university events, participate in activities
+                and discover new opportunities.
+            </p>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Fest</h3>
+                <p>Date: 10 December 2026</p>
+                <p>Explore technology, innovation and coding.</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>Date: 15 December 2026</p>
+                <p>Participate in exciting sports competitions.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Date: 20 December 2026</p>
+                <p>Showcase your talent through music and dance.</p>
+            </article>
+        </section>
+
+        <!-- Activities -->
+        <section id="activities">
+            <h2>University Activities</h2>
+
+            <article>
+                <h3>Technical Clubs</h3>
+                <p>Join coding, robotics and cybersecurity clubs.</p>
+            </article>
+
+            <article>
+                <h3>Creative Clubs</h3>
+                <p>Explore art, photography and cultural activities.</p>
+            </article>
+
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Announcements</h2>
+            <p>Registrations are open for upcoming university events!</p>
+        </aside>
+
+        <!-- Registration Form -->
+        <section id="register">
+
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Enter your email" required>
+
+                <label for="roll">Student ID:</label>
+                <input type="text" id="roll" name="roll"
+                    placeholder="Enter student ID" required>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="ece">Electronics</option>
+                    <option value="eee">Electrical</option>
+                    <option value="mech">Mechanical</option>
+                </select>
+
+                <fieldset>
+                    <legend>Year of Study:</legend>
+
+                    <input type="radio" id="first" name="year"
+                        value="First Year" required>
+                    <label for="first">First Year</label>
+
+                    <input type="radio" id="second" name="year"
+                        value="Second Year">
+                    <label for="second">Second Year</label>
+
+                    <input type="radio" id="third" name="year"
+                        value="Third Year">
+                    <label for="third">Third Year</label>
+
+                    <input type="radio" id="fourth" name="year"
+                        value="Fourth Year">
+                    <label for="fourth">Fourth Year</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Select Activities:</legend>
+
+                    <input type="checkbox" id="coding"
+                        name="activities" value="Coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="sports"
+                        name="activities" value="Sports">
+                    <label for="sports">Sports</label>
+
+                    <input type="checkbox" id="cultural"
+                        name="activities" value="Cultural">
+                    <label for="cultural">Cultural</label>
+                </fieldset>
+
+                <label for="message">Why do you want to participate?</label>
+                <textarea id="message" name="message"
+                    rows="4" placeholder="Enter your message"></textarea>
+
+                <button type="submit">Register Now</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 University Activity Portal</p>
+        <p>Contact: activities@university.edu</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

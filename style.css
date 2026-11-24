@@ -1,0 +1,293 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF3E0;
+    color: #252525;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 28px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #FF0000;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    margin-bottom: 18px;
+    font-size: 25px;
+    color: #252525;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #252525;
+}
+
+/* WELCOME SECTION */
+main > section:first-child {
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    padding: 45px 30px;
+}
+
+main > section:first-child h2 {
+    color: white;
+    font-size: 30px;
+}
+
+/* EVENTS SECTION */
+#events {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+#events h2 {
+    grid-column: 1 / -1;
+}
+
+#events article {
+    padding: 22px;
+    border-radius: 10px;
+    min-height: 160px;
+}
+
+/* EVENT CARDS */
+#events article:nth-of-type(1) {
+    background-color: #FFF3E0;
+    border-left: 6px solid #FF0000;
+}
+
+#events article:nth-of-type(2) {
+    background-color: #FFF0B3;
+    border-left: 6px solid #D99A00;
+}
+
+#events article:nth-of-type(3) {
+    background-color: #FADBD8;
+    border-left: 6px solid #FF0000;
+}
+
+/* ACTIVITIES SECTION */
+#activities {
+    background-color: #FFF3E0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+#activities h2 {
+    grid-column: 1 / -1;
+}
+
+#activities article {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    border-left: 6px solid #252525;
+}
+
+/* ANNOUNCEMENTS */
+aside {
+    background-color: #FFC107;
+    color: #252525;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border-left: 6px solid #FF0000;
+}
+
+aside h2 {
+    color: #252525;
+}
+
+/* REGISTRATION SECTION */
+#register {
+    background-color: #FFF3E0;
+}
+
+#register h2 {
+    text-align: center;
+}
+
+#register form {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #E5D5C5;
+}
+
+/* FORM LABELS */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+/* INPUT FIELDS */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BBBBBB;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    color: #252525;
+}
+
+/* FIELDSETS */
+fieldset {
+    border: 1px solid #E5B9B5;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 18px 0;
+}
+
+legend {
+    color: #FF0000;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: vertical;
+}
+
+/* INPUT FOCUS */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #FF0000;
+    border-color: #FF0000;
+}
+
+/* SUBMIT BUTTON */
+button {
+    width: 100%;
+    background-color: #FF0000;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #CC0000;
+}
+
+/* FOOTER */
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    #events {
+        grid-template-columns: 1fr;
+    }
+
+    #activities {
+        grid-template-columns: 1fr;
+    }
+
+    #events h2,
+    #activities h2 {
+        grid-column: 1;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    #register form {
+        padding: 15px;
+    }
+}
